@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ffafbd, #ffc3a0); /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    animation: fadeIn 1s; /* Animation */
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #ff6b6b; /* Red color */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(255, 105, 180, 0.5); /* Text shadow */
+}
+
+p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between buttons */
+}
+
+button {
+    background-color: #ff6b6b; /* Button color */
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 25px; /* Rounded buttons */
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s, transform 0.2s; /* Transition effects */
+}
+
+button:hover {
+    background-color: #ff3b3b; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge button */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); /* Slide in from top */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Original position */
+    }
+}
+
+.navigation {
+    margin-top: 20px;
+    padding: 10px; /* Padding around the navigation area */
+    border-top: 2px solid #ff6b6b; /* Top border */
+    border-bottom: 2px solid #ff6b6b; /* Bottom border */
+}
+
+.nav-button {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #ff6b6b; /* Button color */
+    color: white;
+    text-decoration: none; /* Remove underline */
+    border-radius: 25px; /* Rounded button */
+    transition: background-color 0.3s, transform 0.2s; /* Transition effects */
+    margin-top: 10px; /* Space above button */
+}
+
+.nav-button:hover {
+    background-color: #ff3b3b; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge button */
+}
+ 

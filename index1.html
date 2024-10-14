@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lovely Photos</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link ke file CSS -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff3f3; /* Light pink background */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #ff6b6b; /* Red color */
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            width: 80%;
+        }
+
+        .photo-frame {
+            border: 5px solid #ff6b6b; /* Frame color */
+            border-radius: 15px; /* Rounded corners */
+            overflow: hidden; /* To round corners of the image */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+            transition: transform 0.2s; /* Transition effect for hover */
+        }
+
+        .photo-frame:hover {
+            transform: scale(1.05); /* Enlarge on hover */
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block; /* Remove gap below image */
+        }
+        .navigation {
+            margin-top: 20px;
+            padding: 10px; /* Padding around the navigation area */
+            border-top: 2px solid #ff6b6b; /* Top border */
+            border-bottom: 2px solid #ff6b6b; /* Bottom border */
+        }
+
+        .nav-button {
+            display: inline-block;
+            padding: 15px 25px;
+            background-color: #ff6b6b; /* Button color */
+            color: white;
+            text-decoration: none; /* Remove underline */
+            border-radius: 25px; /* Rounded button */
+            transition: background-color 0.3s, transform 0.2s; /* Transition effects */
+            margin-top: 10px; /* Space above button */
+        }
+
+        .nav-button:hover {
+            background-color: #ff3b3b; /* Darker shade on hover */
+            transform: scale(1.05); /* Slightly enlarge button */
+        }
+    </style>
+</head>
+<body>
+    <h1>Lovely Photos</h1>
+    <div class="gallery">
+        <div class="photo-frame">
+            <img src="images/lucu4.jpg" alt="Lovely Photo 1">
+        </div>
+        <div class="photo-frame">
+            <img src="images/lucu2.jpg" alt="Lovely Photo 2">
+        </div>
+        <div class="photo-frame">
+            <img src="images/lucu3.jpg" alt="Lovely Photo 3">
+        </div>
+        <div class="photo-frame">
+            <img src="images/lucu5.jpg" alt="Lovely Photo 4">
+        </div>
+        
+    </div>
+    <div class="navigation">
+        <a href="index.html" class="nav-button">coba klikk inii</a> <!-- Link to the new page -->
+    </div>
+</body>
+</html>
